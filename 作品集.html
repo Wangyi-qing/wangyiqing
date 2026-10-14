@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>个人作品集</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    line-height: 1.7;
+    color: #333;
+    background: #f5f6f8;
+  }
+
+  .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+
+  /* ---------- 头部 ---------- */
+  .hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #c0392b, #e74c3c);
+    color: #fff;
+    border-radius: 16px;
+    margin-bottom: 40px;
+  }
+  .hero h1 { font-size: 2em; margin-bottom: 10px; letter-spacing: 2px; }
+  .hero p { opacity: 0.9; font-size: 1em; }
+
+  /* ---------- 模块 ---------- */
+  .module {
+    background: #fff;
+    border-radius: 14px;
+    padding: 28px;
+    margin-bottom: 28px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+  .module-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #f0f0f0;
+  }
+  .module-icon {
+    width: 42px; height: 42px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #c0392b, #e74c3c);
+    display: flex; align-items: center; justify-content: center;
+    color: #fff; font-size: 1.2em; font-weight: bold;
+    flex-shrink: 0;
+  }
+  .module-title {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #222;
+  }
+  .module-desc {
+    font-size: 0.9em;
+    color: #888;
+    margin-top: 2px;
+  }
+
+  /* ---------- 卡片网格 ---------- */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+  }
+
+  .card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background: #fafbfc;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 18px;
+    transition: all 0.25s ease;
+    position: relative;
+  }
+  .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(192,57,43,0.15);
+    border-color: #e74c3c;
+    background: #fff;
+  }
+  .card-tag {
+    display: inline-block;
+    font-size: 0.75em;
+    padding: 2px 10px;
+    border-radius: 999px;
+    background: #fdecea;
+    color: #c0392b;
+    margin-bottom: 8px;
+  }
+  .card-title {
+    font-size: 1.05em;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 6px;
+    line-height: 1.4;
+  }
+  .card-meta {
+    font-size: 0.82em;
+    color: #999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .card-arrow {
+    color: #e74c3c;
+    font-size: 1.1em;
+    transition: transform 0.25s;
+  }
+  .card:hover .card-arrow { transform: translateX(4px); }
+
+  /* ---------- 页脚 ---------- */
+  .footer {
+    text-align: center;
+    padding: 30px 20px;
+    color: #999;
+    font-size: 0.88em;
+  }
+  .footer a { color: #c0392b; text-decoration: none; }
+
+  /* ---------- 移动端 ---------- */
+  @media (max-width: 600px) {
+    .hero h1 { font-size: 1.5em; }
+    .module { padding: 20px; }
+    .card-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- 头部 -->
+  <div class="hero">
+    <h1>王怡清 · 个人作品集</h1>
+    <p>汇聚点滴声音与故事</p>
+  </div>
+
+  <!-- ================================================== -->
+  <!-- 模块一：宣传月报 -->
+  <!-- ================================================== -->
+  <div class="module">
+    <div class="module-header">
+      <div class="module-icon">报</div>
+      <div>
+        <div class="module-title">宣传月报</div>
+        <div class="module-desc">学生微宣讲团-按月记录全校宣讲动态与工作成果</div>
+      </div>
+    </div>
+
+    <div class="card-grid">
+
+      <!-- 2026年5月月报 -->
+      <a class="card"
+         href="https://mp.weixin.qq.com/s/4svsuIrronPpTDXRSQkU8A"
+         target="_blank" rel="noopener">
+        <span class="card-tag">2026年5月</span>
+        <div class="card-title">西安交通大学学生宣讲工作月报</div>
+        <div class="card-meta">
+          <span>2026-06-23 发布</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+
+      <!-- 2026年4月月报 -->
+      <a class="card"
+         href="https://mp.weixin.qq.com/s/NscgSKJgN-IDXAJbYABJVg"
+         target="_blank" rel="noopener">
+        <span class="card-tag">2026年4月</span>
+        <div class="card-title">西安交通大学学生宣讲工作月报</div>
+        <div class="card-meta">
+          <span>2026-05-22 发布</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+
+      <!-- 2026年3月月报 -->
+      <a class="card"
+         href="https://mp.weixin.qq.com/s/3dJlC16DqGHPr4LZcI1w7g"
+         target="_blank" rel="noopener">
+        <span class="card-tag">2026年3月</span>
+        <div class="card-title">西安交通大学学生宣讲工作月报</div>
+        <div class="card-meta">
+          <span>2026-04-22 发布</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+
+      <!-- 2026年1&2月月报 -->
+      <a class="card"
+         href="https://mp.weixin.qq.com/s/_04EZ_WAssNRxNG_S6Z3qw"
+         target="_blank" rel="noopener">
+        <span class="card-tag">2026年1&2月</span>
+        <div class="card-title">西安交通大学学生宣讲工作月报</div>
+        <div class="card-meta">
+          <span>2026-03-09 发布</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+
+      <!-- 2025年12月月报 -->
+      <a class="card"
+         href="https://mp.weixin.qq.com/s/hqSg8z4iiRgrTE2OPfBPPg"
+         target="_blank" rel="noopener">
+        <span class="card-tag">2025年12月</span>
+        <div class="card-title">西安交通大学学生宣讲工作月报</div>
+        <div class="card-meta">
+          <span>2026-01-21 发布</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+
+      <!-- 2025年11月月报 -->
+      <a class="card"
+         href="https://mp.weixin.qq.com/s/C-oMQtApnzsafYXVX-I-2w"
+         target="_blank" rel="noopener">
+        <span class="card-tag">2025年11月</span>
+        <div class="card-title">西安交通大学学生宣讲工作月报</div>
+        <div class="card-meta">
+          <span>2026-12-17 发布</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+
+      <!-- 2025年10月月报 -->
+      <a class="card"
+         href="https://mp.weixin.qq.com/s/8FQwXAri7ZNFHegLZZOmSA"
+         target="_blank" rel="noopener">
+        <span class="card-tag">2025年10月</span>
+        <div class="card-title">西安交通大学学生宣讲工作月报</div>
+        <div class="card-meta">
+          <span>2026-11-19 发布</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+
+      <!-- 2025年9月月报 -->
+      <a class="card"
+         href="https://mp.weixin.qq.com/s/UqKMmdDR2R3qhJZH35O8ew"
+         target="_blank" rel="noopener">
+        <span class="card-tag">2025年9月</span>
+        <div class="card-title">西安交通大学学生宣讲工作月报</div>
+        <div class="card-meta">
+          <span>2026-10-28 发布</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+
+
+    </div>
+  </div>
+
+  <!-- ================================================== -->
+  <!-- 模块二：西迁人物稿件 -->
+  <!-- ================================================== -->
+  <div class="module">
+    <div class="module-header">
+      <div class="module-icon">稿</div>
+      <div>
+        <div class="module-title">党史宣讲</div>
+        <div class="module-desc">西迁人物宣讲稿件</div>
+      </div>
+    </div>
+
+    <div class="card-grid">
+
+      <a class="card"
+         href="https://mp.weixin.qq.com/s/TvpSebGJQm21VpibvuBEKA"
+         target="_blank" rel="noopener">
+        <span class="card-tag">“西迁之光”公众号</span>
+        <div class="card-title">黄宏嘉：我的发明是给祖国用的</div>
+        <div class="card-meta">
+          <span>2022-10-13</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+
+      <a class="card"
+         href="https://mp.weixin.qq.com/s/OhZgIsdTVWkiWpNUL0qp_Q"
+         target="_blank" rel="noopener">
+        <span class="card-tag">“西迁之光”公众号</span>
+        <div class="card-title">怀根参天木，核工领军人——罗琦院士</div>
+        <div class="card-meta">
+          <span>2022-09-21</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+ 
+     <a class="card"
+         href="https://mp.weixin.qq.com/s/LpRx7Lgf5wMikAjV639hnw"
+         target="_blank" rel="noopener">
+        <span class="card-tag">“西迁之光”公众号</span>
+        <div class="card-title">报国春蚕志 震起护民安——世界地震工程之父刘恢先</div>
+        <div class="card-meta">
+          <span>2022-06-05</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+
+     <a class="card"
+         href="https://mp.weixin.qq.com/s/rUHJQBO7zrKrRqnTago2SQ"
+         target="_blank" rel="noopener">
+        <span class="card-tag">“西迁之光”公众号</span>
+        <div class="card-title">管晓宏：艺术与科学交汇的人生</div>
+        <div class="card-meta">
+          <span>2022-04-20</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+
+      <a class="card"
+         href="https://mp.weixin.qq.com/s/XEXwxML1ZSgDO3mH6rgZ6w"
+         target="_blank" rel="noopener">
+        <span class="card-tag">“西迁之光”公众号</span>
+        <div class="card-title">姚穆：纺织情深，报国志浓</div>
+        <div class="card-meta">
+          <span>2021-12-21</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+
+      <a class="card"
+         href="https://mp.weixin.qq.com/s/OyDgejwEj8I3RfvJDdqYSQ"
+         target="_blank" rel="noopener">
+        <span class="card-tag">“西迁之光”公众号</span>
+        <div class="card-title">张光斗——当代李冰，水利泰斗</div>
+        <div class="card-meta">
+          <span>2021-12-10</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+
+      <a class="card"
+         href="https://mp.weixin.qq.com/s/ROYbi2-zLXToMsq8OUJ2kQ"
+         target="_blank" rel="noopener">
+        <span class="card-tag">“西迁之光”公众号</span>
+        <div class="card-title">方俊：少年立志，伟心为国</div>
+        <div class="card-meta">
+          <span>2021-11-22</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+
+      <a class="card"
+         href="https://mp.weixin.qq.com/s/-tl_GgA2tkHS78RaC0qJPQ"
+         target="_blank" rel="noopener">
+        <span class="card-tag">“西迁之光”公众号</span>
+        <div class="card-title">李鹤林：鹤鸣九皋，声闻于天</div>
+        <div class="card-meta">
+          <span>2021-11-04</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+
+      <a class="card"
+         href="https://mp.weixin.qq.com/s/wo4k4vhSrwY-QjF-BZFiww"
+         target="_blank" rel="noopener">
+        <span class="card-tag">“西迁之光”公众号</span>
+        <div class="card-title">黄志千：情缘航空梦</div>
+        <div class="card-meta">
+          <span>2021-10-19</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+
+      <a class="card"
+         href="https://mp.weixin.qq.com/s/R7mpVlHSaJxramyU91Y8Ug"
+         target="_blank" rel="noopener">
+        <span class="card-tag">“西迁之光”公众号</span>
+        <div class="card-title">涂铭旌：两次“西迁”，不朽人生</div>
+        <div class="card-meta">
+          <span>2021-10-11</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+
+      <a class="card"
+         href="https://mp.weixin.qq.com/s/KamGO5McJKNBstME9sLhYg"
+         target="_blank" rel="noopener">
+        <span class="card-tag">“西迁之光”公众号</span>
+        <div class="card-title">周炯槃：学高为师，德高为范</div>
+        <div class="card-meta">
+          <span>2021-10-09</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+
+      <a class="card"
+         href="https://mp.weixin.qq.com/s/lDkCE0Eo9kCkPIoqUfbBPQ"
+         target="_blank" rel="noopener">
+        <span class="card-tag">“西迁之光”公众号</span>
+        <div class="card-title">徐秉汉：核弹升天，潜艇入海</div>
+        <div class="card-meta">
+          <span>2021-09-27</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+
+      <a class="card"
+         href="https://mp.weixin.qq.com/s/J54Af8c816VqhS8KiU-mfg"
+         target="_blank" rel="noopener">
+        <span class="card-tag">“西迁之光”公众号</span>
+        <div class="card-title">童铠：求知求问，航天人，航天魂</div>
+        <div class="card-meta">
+          <span>2021-09-24</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+<!-- ================================================== -->
+  <!-- 模块三：学生微宣讲团-新闻稿精选 -->
+  <!-- ================================================== -->
+  <div class="module">
+    <div class="module-header">
+      <div class="module-icon">图文</div>
+      <div>
+        <div class="module-title">公众号及新闻网稿件</div>
+        <div class="module-desc">学生微宣讲团</div>
+      </div>
+    </div>
+
+    <div class="card-grid">
+
+      <a class="card"
+         href="https://news.xjtu.edu.cn/info/1033/231455.htm"
+         target="_blank" rel="noopener">
+        <span class="card-tag">西安交通大学新闻网</span>
+        <div class="card-title">牢记嘱托跟党走 青春担当“十五五”全国高校青年接力宣讲活动在西安交大举办</div>
+        <div class="card-meta">
+          <span>2026-04-27</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+
+      <a class="card"
+         href="https://news.xjtu.edu.cn/info/1003/221150.htm"
+         target="_blank" rel="noopener">
+        <span class="card-tag">西安交通大学新闻网</span>
+        <div class="card-title">西安交大学生微宣讲团参加“强核报国七十载·自强不息向未来”核科普活动</div>
+        <div class="card-meta">
+          <span>2025-04-25</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+
+      <a class="card"
+         href="https://news.xjtu.edu.cn/info/1003/221150.htm"
+         target="_blank" rel="noopener">
+        <span class="card-tag">西安交通大学新闻网</span>
+        <div class="card-title">西安交大学生微宣讲团举办2024年度分团建设工作交流会</div>
+        <div class="card-meta">
+          <span>2025-03-04</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+
+      <a class="card"
+         href="https://news.xjtu.edu.cn/info/1003/221150.htm"
+         target="_blank" rel="noopener">
+        <span class="card-tag">西安交通大学新闻网</span>
+        <div class="card-title">西安交通大学学生微宣讲团联合五所高校举办纪念遵义会议召开90周年联学交流会</div>
+        <div class="card-meta">
+          <span>2025-01-19</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+
+      <a class="card"
+         href="https://mp.weixin.qq.com/s/YeuD8xdQjhssPVdjSSX-hg"
+         target="_blank" rel="noopener">
+        <span class="card-tag">学生微宣讲团</span>
+        <div class="card-title">【宣讲风采】金声振玉传新理，秋实盈仓颂雅音</div>
+        <div class="card-meta">
+          <span>2025-11-01</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+
+      <a class="card"
+         href="https://mp.weixin.qq.com/s/Rsuy33RduCcNs_70bzjQiw"
+         target="_blank" rel="noopener">
+        <span class="card-tag">学生微宣讲团</span>
+        <div class="card-title">【宣讲风采】桃李争春传新语，理论明灯照通途</div>
+        <div class="card-meta">
+          <span>2025-04-17</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+
+      <a class="card"
+         href="https://mp.weixin.qq.com/s/53-qW9__nnrI7r0NJSZafA"
+         target="_blank" rel="noopener">
+        <span class="card-tag">学生微宣讲团</span>
+        <div class="card-title">【宣讲风采】秋韵宣讲少年志，梦驻四海迎新篇</div>
+        <div class="card-meta">
+          <span>2024-12-12</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+
+      <a class="card"
+         href="https://mp.weixin.qq.com/s/-CMM8FtGbGHwEDqxib7Z1g"
+         target="_blank" rel="noopener">
+        <span class="card-tag">学生微宣讲团</span>
+        <div class="card-title">【宣讲风采】九月秋意正渐浓，宣声朗朗启新程</div>
+        <div class="card-meta">
+          <span>2024-10-20</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+
+      <a class="card"
+         href="https://mp.weixin.qq.com/s/tA3NGq6j-GYXSEOlLnCTig"
+         target="_blank" rel="noopener">
+        <span class="card-tag">学生微宣讲团</span>
+        <div class="card-title">百卅辉光映初心，青春微言启新程——西安交通大学学生微宣讲团2025年度工作回顾</div>
+        <div class="card-meta">
+          <span>2026-02-12</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+
+      <a class="card"
+         href="https://mp.weixin.qq.com/s/h6CWXRHpDM-H4QEMzEjYJA"
+         target="_blank" rel="noopener">
+        <span class="card-tag">学生微宣讲团</span>
+        <div class="card-title">【招新】学生微宣讲团邀你共赴精彩未来！</div>
+        <div class="card-meta">
+          <span>2025-08-22</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+
+  <!-- 页脚 -->
+  <div class="footer">
+    <p>王怡清 · 个人作品集</p>
+    <p style="margin-top:6px;">
+      联系邮箱：<a href="mailto:ccwyq_mail@163.com">your@email.com</a>
+    </p>
+  </div>
+
+</div>
+</body>
+</html>
